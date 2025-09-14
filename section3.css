@@ -1,0 +1,112 @@
+
+
+
+
+.sec3-element1{
+    
+    grid-row: 1 / 4;
+    grid-column: 1 / 7;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    font-size: xx-large;
+}
+
+.sec3-element2{
+    
+    grid-row: 1 / 4 ;
+    grid-column: 7 / 11 ;
+    background-image: url(images/reservation.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+        
+}
+
+.sec3-element3{
+    
+    grid-row: 5 / 8 ;
+    grid-column: 1 / 5;
+    background-image: url(images/profile.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20%;
+    
+}
+
+.sec3-element4{
+    
+    grid-row: 5 / 8;
+    grid-column: 5 / 11;
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+.hidden .sec3-element1{
+    opacity: 0;
+    filter: blur(50px);
+    transform: translateX(-300%);
+    transition: all 1.5s;
+    transition-delay: 1.2s;
+}
+.show .sec3-element1{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    position: relative;
+    z-index: -1;
+}
+
+.hidden .sec3-element2{
+    opacity: 0;
+    filter: blur(50px);
+    transform: translateX(300%);
+    transition: all 1.5s;
+    transition-delay: 1.2s;
+}
+.show .sec3-element2{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    position: relative;
+    z-index: -1;
+}
+
+
+.hidden .sec3-element3{
+    opacity: 0;
+    filter: blur(50px);
+    transform: translateX(-300%);
+    transition: all 1.5s;
+    transition-delay: 1.2s;
+}
+.show .sec3-element3{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    position: relative;
+    z-index: -1;
+}
+
+.hidden .sec3-element4{
+    opacity: 0;
+    filter: blur(50px);
+    transform: translateX(300%);
+    transition: all 1.5s;
+    transition-delay: 1.2s;
+}
+.show .sec3-element4{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    position: relative;
+    z-index: -1;
+}

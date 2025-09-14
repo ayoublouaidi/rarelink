@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="profile.css">
+
+  <link rel="stylesheet" href="demo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="whole">
+
+    <main class="cd__main" id="main">
+      <div class="profile-page">
+        <div class="content">
+          <div class="content__cover">
+
+            <div class="profile-pic">
+              <label class="-label" for="file">
+                <span class="glyphicon glyphicon-camera"></span>
+                <span>Change Image</span>
+              </label>
+              <input id="file" type="file" onchange="loadFile(event)" />
+              <img src="user.jpg" id="output" width="200" />
+            </div>
+            <div class="content__bull">
+            </div>
+          </div>
+
+          <div class="content__actions">
+
+
+          </div>
+          <div class="content__title">
+            <h1 id="n"></h1>
+          </div>
+
+          <ul class="content__list">
+            <li><span id="age"></span>Age</li>
+            <li><span id="wilaya"></span>Wilaya</li>
+            <li><span id="gender"></span>Gender</li>
+          </ul>
+
+          <ul class="content__list">
+            <li><span id="height"></span>Height</li>
+            <li><span id="weight"></span>Weight</li>
+            <li><span id="illness"></span>Illness</li>
+          </ul>
+
+          <div class="content__button">
+            <a href="#edit">
+              <div class="button__border"></div>
+              <div class="button__bg"></div>
+              <p class="button__text">Edit infos</p>
+            </a>
+            <a href="index.html">
+              <div class="button__border"></div>
+              <div class="button__bg"></div>
+              <p class="button__text">Sign Out</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <div class="profile-form" id="edit">
+      <h2>Profile Information</h2>
+      <form class="edit-form">
+        <div class="div1">
+
+          <label for="first_name">First Name</label>
+          <input type="text" id="fnInput" name="first_name" required>
+
+          <label for="last_name">Last Name</label>
+          <input type="text" id="snInput" name="last_name" required>
+
+          <label for="age">Age</label>
+          <input type="text" id="ageInput" name="age" required>
+
+          <label for="wilaya">Algerian Wilaya</label>
+          <select id="wilayaInput" name="wilaya" required>
+            <option value="">Select Wilaya</option>
+            <option value="Adrar">Adrar</option>
+            <option value="Chlef">Chlef</option>
+            <option value="Laghouat">Laghouat</option>
+            <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+            <option value="Batna">Batna</option>
+            <option value="Béjaïa">Béjaïa</option>
+            <option value="Biskra">Biskra</option>
+            <option value="Béchar">Béchar</option>
+            <option value="Blida">Blida</option>
+            <option value="Bouira">Bouira</option>
+            <option value="Tamanrasset">Tamanrasset</option>
+            <option value="Tébessa">Tébessa</option>
+            <option value="Tlemcen">Tlemcen</option>
+            <option value="Tiaret">Tiaret</option>
+            <option value="Tizi Ouzou">Tizi Ouzou</option>
+            <option value="Algiers">Algiers</option>
+            <option value="Djelfa">Djelfa</option>
+            <option value="Jijel">Jijel</option>
+            <option value="Sétif">Sétif</option>
+            <option value="Saïda">Saïda</option>
+            <option value="Skikda">Skikda</option>
+            <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+            <option value="Annaba">Annaba</option>
+            <option value="Guelma">Guelma</option>
+            <option value="Constantine">Constantine</option>
+            <option value="Médéa">Médéa</option>
+            <option value="Mostaganem">Mostaganem</option>
+            <option value="M'Sila">M'Sila</option>
+            <option value="Mascara">Mascara</option>
+            <option value="Ouargla">Ouargla</option>
+            <option value="Oran">Oran</option>
+            <option value="El Bayadh">El Bayadh</option>
+            <option value="Illizi">Illizi</option>
+            <option value="Bordj Bou Arréridj">Bordj Bou Arréridj</option>
+            <option value="Boumerdès">Boumerdès</option>
+            <option value="El Tarf">El Tarf</option>
+            <option value="Tindouf">Tindouf</option>
+            <option value="Tissemsilt">Tissemsilt</option>
+            <option value="El Oued">El Oued</option>
+            <option value="Khenchela">Khenchela</option>
+            <option value="Souk Ahras">Souk Ahras</option>
+            <option value="Tipaza">Tipaza</option>
+            <option value="Mila">Mila</option>
+            <option value="Aïn Defla">Aïn Defla</option>
+            <option value="Naâma">Naâma</option>
+            <option value="Aïn Témouchent">Aïn Témouchent</option>
+            <option value="Ghardaïa">Ghardaïa</option>
+            <option value="Relizane">Relizane</option>
+            <option value="Timimoun">Timimoun</option>
+            <option value="Bordj Badji Mokhtar">Bordj Badji Mokhtar</option>
+            <option value="Ouled Djellal">Ouled Djellal</option>
+            <option value="Béni Abbès">Béni Abbès</option>
+            <option value="In Salah">In Salah</option>
+            <option value="In Guezzam">In Guezzam</option>
+            <option value="Touggourt">Touggourt</option>
+            <option value="Djanet">Djanet</option>
+            <option value="El M'Ghair">El M'Ghair</option>
+            <option value="El Menia">El Menia</option>
+          </select>
+        </div>
+
+        <div class="div2">
+          <label for="gender">Gender</label>
+          <select id="genderInput" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+          <label for="illness">Illness</label>
+          <select id="illnessInput" name="illness" required>
+            <option value="">Select Illness</option>
+            <option value="illness1">Autism</option>
+            <option value="illness2">Xeroderma Pigmentosum (XP)</option>
+            <option value="illness3">Cardiovascular Diseases</option>
+            <option value="illness4">Leishmaniasis</option>
+            <option value="illness5">Tuberculosis (TB)</option>
+            <option value="illness6">Diabetes</option>
+            <option value="illness7">Asthma</option>
+            <option value="illness8">Hypertension</option>
+            <option value="illness9">Vitiligo</option>
+          </select>
+
+          <label for="height">Height</label>
+          <input type="text" id="heightInput" name="height" max="230" min="140" required>
+
+          <label for="weight">Weight</label>
+          <input type="text" id="weightInput" name="weight" max="200" min="20" required>
+        </div>
+      </form>
+      <div class="changes">
+        <a href="#main" onclick="editInfos()">Submit</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

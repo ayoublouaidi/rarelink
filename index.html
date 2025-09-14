@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wholeSite.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="section1.css">
+    <link rel="stylesheet" href="section2.css">
+    <link rel="stylesheet" href="section3.css">
+    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Rare Link</title>
+</head>
+<body>
+    <section>
+        <img class="hero-image" src="images/background.jpg">
+    </section>
+
+    
+        <header>
+            <div class="navbar-container">
+                <img class="logo-image" src="images/logo.png" alt="a logo image">
+                <div class="menu-container">
+                    <div class="menu-element" onclick="scrollToSection(2)"><a><p>Doctors</p></a></div>
+                    <div class="menu-element"><a><p>Stats</p></a></div>
+                    <div class="menu-element" onclick="scrollToSection(1)"><a><p>About</p></a></div>
+                    <div class="menu-element" onclick="scrollToSection(4)"><a><p>Sign-Up</p></a></div>
+                </div>
+            </div>
+        </header>
+    
+
+
+    <section id="section1">
+        <div class="hidden">
+            <div class="sec1-element1"></div>
+            <div class="sec1-element2">
+                <h1>RARE LINK</h1>
+            </div>
+            <div class="sec1-element3">
+                <p>
+                    At RARE LINK, we connect individuals with health challenges to top medical professionals. Our mission is to ensure patients receive the best care tailored to their needs by linking them with highly qualified doctors. Committed to improving health outcomes, we match patients with compassionate specialists known for their excellence. Our personalized approach provides not only medical attention but also a comprehensive support system for well-being and recovery.
+                </p>
+            </div>
+            <div class="sec1-element4">
+                <a>Sign-Up!</a>
+            </div>
+        </div>
+    </section>
+    
+        
+    <section id="section2">
+        <div class="hidden">
+            <div class="sec2-element1"></div>
+            <div class="sec2-element2"></div>
+            <div class="sec2-element3"></div>
+            <div class="sec2-element4"></div>
+            <div class="sec2-element5">
+                <p>
+                    In Algeria, we're proud to say that we have the finest doctors around. With unparalleled expertise and a commitment to compassionate care, our team stands ready to provide you with top-notch medical services, ensuring your health is in the best hands possible.
+                </p>
+            </div>
+            <div class="sec2-element6"></div>
+        </div>
+    </section>
+
+        
+    <section id="section3">
+        <div class="hidden">
+            <div class="sec3-element1">
+                <p>
+                    become a memeber to get access to all features !
+                </p>
+            </div>
+            <div class="sec3-element2"></div>
+            <div class="sec3-element3"></div>
+            <div class="sec3-element4">
+                <p>
+                    having a profile will give u access to reserve with doctors
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="hidden">
+            <div class="container" id="container">
+                <div class="form-container sign-up">
+                    <form>
+                        <h1>Create Account</h1>
+                        <div class="social-icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email for registeration</span>
+                        <input type="text" id="fname" placeholder="First Name" required>
+                        <input type="text" id="sname" placeholder=" Last Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="password" id="pass" placeholder="Password" required>
+                        <button type="button" onclick="SignUp()">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in">
+                    <form>
+                        <h1>Sign In</h1>
+                        <div class="social-icons">
+                            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email password</span>
+                        <input id="log-email" type="email" placeholder="Email" required>
+                        <input id="log-pass" type="password" placeholder="Password" required>
+                        <a href="#">Forget Your Password?</a>
+                        <button type="button" onclick="LogIn()">Sign In</button>
+                    </form>
+                </div>
+                <div class="toggle-container">
+                    <div class="toggle">
+                        <div class="toggle-panel toggle-left">
+                            <h1>Welcome Back!</h1>
+                            <p>Enter your personal details to use all of site features</p>
+                            <button class="hide" id="login">Sign In</button>
+                        </div>
+                        <div class="toggle-panel toggle-right">
+                            <h1>Hello, Friend!</h1>
+                            <p>Register with your personal details to use all of site features</p>
+                            <button class="hide" id="register">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="main">
+            <div class="element">
+                <h1>Contacts</h1>
+                <ul>
+                    <li><b>Address:</b><p>Bouira University, RN5, Bouira 10000, Algeria</p></li>
+                    <li><b>Email:</b><a href="#"><p>info@bouirauniversityproject.edu</p></a></li>
+                    <li><b>Phone:</b><p>+213 26 93 35 60</p></li>
+                </ul>
+            </div>
+            <div class="element">
+                <h1>Thanking</h1>
+                <p>This project is supported by the Faculty of Science and Technology at Bouira University. Special thanks to our advisors, professors, and fellow students for their invaluable support and guidance.
+                </p>
+            </div>
+            <div class="element">
+                <h1>Quick Links</h1>
+                <ul>
+                    <li><a><p>Home</p></a></li>
+                    <li><a><p>Team</p></a></li>
+                    <li><a><p>Research</p></a></li>
+                    <li><a><p>privacy Policy</p></a></li>
+                    <li><a><p>Terms of service</p></a></li>
+                </ul>
+            </div>
+            <div class="element">
+                <h1>Follow us</h1>
+                <div class="socials">
+                    <img src="images/facebook.png">
+                    <img src="images/instagram.png">
+                    <img src="images/twitter.png">
+                    <img src="images/email.png">
+                </div>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <p>
+                © 2024 Bouira University School Project. All rights reserved. This project is a student-led initiative aimed at enhancing academic research and professional skills. The content provided is for educational purposes only and does not constitute an official endorsement by Bouira University.
+            </p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
